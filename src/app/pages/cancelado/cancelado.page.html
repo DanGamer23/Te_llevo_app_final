@@ -1,0 +1,60 @@
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+
+      </ion-col>
+      <ion-col size="8">
+        <div class="centrado1">
+          <h1 class="titulo">Te llevo APP</h1>
+        </div>
+
+        </ion-col>
+      <ion-col>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div class="centrado1">
+    <h1 class="titulo1">¿Seguro que quieres cancelar el viaje?</h1>
+  </div>
+  <br>
+  <br>
+  <div class="centrado">
+    <ion-button  class="botones" (click)="cancelar()">Cancelar viaje</ion-button>
+  </div>
+  <br>
+  <div class="centrado">
+    <ion-button  class="botones" (click)="volver()">Volver</ion-button>
+  </div>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+
+      </ion-col>
+      <ion-col size="8">
+        <div class="centrado">
+         <h2 class="subtitulo">Info del Viaje:</h2>
+        </div>
+        <div>
+          
+          <ion-list>
+            <ion-item>
+              <p>Hora de inicio: {{ hora }}:00</p>
+            </ion-item>
+            <ion-item>
+              <p>Punto de inicio: {{ punto }}</p>
+            </ion-item>
+            <ion-item>
+              <p>Valor minimo: ${{ valor }}</p>
+            </ion-item>
+
+          </ion-list>
+        </div>
+        </ion-col>
+      <ion-col>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

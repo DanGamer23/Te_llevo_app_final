@@ -1,0 +1,56 @@
+<ion-content [fullscreen]="true">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+
+      </ion-col>
+      <ion-col size="8">
+        <div class="centrado1">
+          <h1 class="titulo">Te llevo APP</h1>
+        </div>
+        <div class="centrado">
+          <img src="assets/icon/perfil.png" alt="">
+          <h2 class="subtitulo"> {{ usuario }}</h2>
+          <p class="texto1">Pasajero</p>
+          <ion-button  class="botones" (click)="ir()" name="buscar">Buscar viaje</ion-button>
+        </div> 
+
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div class="izquierda">
+    <h2 class="subtitulo">Mis viajes:</h2>
+  </div>
+
+</ion-content>
+
+<div style="display: grid; grid-auto-flow: column; grid-gap: 0px;">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button  class="botones"(click)="volver()" >Volver</ion-button>
+      </ion-col>
+      <ion-col>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
+
+<ion-footer>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

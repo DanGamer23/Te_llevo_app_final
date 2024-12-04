@@ -1,0 +1,68 @@
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+
+      </ion-col>
+      <ion-col size="8">
+        <div class="centrado1">
+          <h1 class="titulo">Te llevo APP</h1>
+        </div>
+        <div class="centrado">
+          <img src="assets/icon/pasajero.png" alt="">
+          <h1 class="titulo1">Viaje terminado</h1>
+        </div>
+        <div>
+          <div class="centrado">
+            <h1 class="titulo1">Info del Viaje:</h1>
+          </div>
+          <ion-list>
+            <ion-item>
+              <p>Direccion: {{ direccion }}</p>
+            </ion-item>
+            <ion-item>
+              <p>Hora de inicio: {{ hora }}:00</p>
+            </ion-item>
+            <ion-item>
+              <p>Punto de inicio: {{ punto }}</p>
+            </ion-item>
+            <ion-item>
+              <p>Valor: ${{ valor }}</p>
+            </ion-item>
+          </ion-list>
+        </div>
+        </ion-col>
+      <ion-col>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+</ion-content>
+
+<div style="display: grid; grid-auto-flow: column; grid-gap: 0px;">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button  class="botones" (click)="fin()" >Finalizar</ion-button>
+      </ion-col>
+      <ion-col>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
+
+<ion-footer>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

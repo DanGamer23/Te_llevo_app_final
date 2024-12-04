@@ -1,0 +1,34 @@
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+
+      </ion-col>
+      <ion-col size="8">
+        <div class="centrado1">
+          <h1 class="titulo">Te llevo APP</h1>
+        </div>
+        <br><br>
+        <div class="centrado">
+          <h1 class="titulo1">Recuperar contraseña:</h1>
+         </div>
+         <br><br><br><br><br>
+         <div class="centrado">
+          <p class="texto">Nombre de usuario:</p>
+          <ion-input [(ngModel)]="usuario" labelPlacement="stacked" aria-label="Nombre"  fill="solid"value="dsad"> </ion-input>
+          <p class="texto">Nueva Contraseña:</p>
+          <ion-input [(ngModel)]="contrasena" labelPlacement="stacked" aria-label="Contraseña" type="password"  fill="solid" (ionInput)="eliminarEspacios($event)"><ion-input-password-toggle slot="end"></ion-input-password-toggle></ion-input>
+          </div>
+          <br>
+          <div>
+            <ion-button expand="block" class="botones" (click)="ir()">Aceptar</ion-button>
+            <br>
+            <ion-button expand="block" class="botones" (click)="noir()">volver</ion-button>
+          </div>
+        </ion-col>
+      <ion-col>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+

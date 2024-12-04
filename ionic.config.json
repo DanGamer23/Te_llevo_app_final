@@ -1,0 +1,7 @@
+{
+  "name": "TelleveAPP",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

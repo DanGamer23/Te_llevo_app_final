@@ -1,0 +1,111 @@
+<ion-content [fullscreen]="true">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+
+        </ion-col>
+        <ion-col size="8">
+          <div class="centrado1">
+            <h1 class="titulo">Te llevo APP</h1>
+          </div>
+
+        </ion-col>
+        <ion-col>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+
+        </ion-col>
+        <ion-col size="8">
+
+        </ion-col>
+        <ion-col>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  <div class="centrado">
+    <h1 class="titulo1">
+      Planifica tu viaje
+    </h1> 
+      <app-clima>
+      </app-clima>
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+
+      </ion-col>
+      <ion-col size="8">
+        <div>
+            
+          <ion-list>
+            <ion-item>
+              <ion-input label="Hora de inicio:" (ionInput)="validarInput($event)"  [(ngModel)]="hora"></ion-input>
+            </ion-item>
+          </ion-list>
+
+        </div>
+
+        <div class="centrado">
+          <ion-input  [(ngModel)]="direccion" label="Direccion" placeholder="ingrese direccion"></ion-input> 
+          <br>
+          <ion-button (click)="buscar()" >Buscar</ion-button>
+          <ion-button (click)="borrar()" >Borrar</ion-button>
+        </div>
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+
+      </ion-col>
+      <ion-col size="10">
+        <ion-list>
+          <ion-item>
+            <ion-select (ionChange)="direccion_seleccionada($event)" label="Seleccione Direccion" placeholder="Direcciones">
+              <ion-select-option [value]="dire" *ngFor="let dire of mis_direcciones">{{ dire.nombre }}</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-card class="grande">
+    <div id="mapa-box" style="width: 100%;height: 150%;">
+
+    </div>
+  </ion-card>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <br>
+        <div class="centrado">
+          <ion-button expand="block" class="botones" (click)="noir()">Cancelar</ion-button>
+        </div>
+      </ion-col>
+      <ion-col>
+        <br>  
+        <div class="centrado">
+          <ion-button expand="block" class="botones"(click)="ir()">Aceptar</ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>

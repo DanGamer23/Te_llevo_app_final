@@ -1,0 +1,45 @@
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+
+      </ion-col>
+      <ion-col size="8">
+        <div class="centrado1">
+          <h1 class="titulo">Te llevo APP</h1>
+        </div>
+        <div class="centrado">
+          <h2 class="subtitulo">Bienvenido: <br> {{ usuario }}</h2>
+        </div>
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div class="centrado">
+    <h1 class="titulo1">¿Que deseas hacer?</h1>
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="centrado">
+          <img src="assets/icon/pasajero.png" alt="">
+          <ion-button expand="block" class="botones" (click)="ir2()">Buscar Viaje</ion-button>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="centrado">
+          <img src="assets/icon/conductor.png" alt="">
+          <ion-button expand="block" class="botones" (click)="ir()">Iniciar Viaje</ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <br><br><br>
+    <div class="centrado">
+      <ion-button  class="botones" (click)="ir3()">Cerrar Sesión</ion-button>
+    </div>
+  </ion-grid>
+</ion-content>
